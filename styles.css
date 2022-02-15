@@ -1,0 +1,98 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.title {
+  font-family: "Lora";
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  min-height: 2.5rem;
+  text-align: center;
+}
+
+.card-text {
+  min-height: 10rem;
+}
+
+.container-form {
+  display: flex;
+}
+
+.site-footer {
+  background-color: rgb(23, 162, 184);
+}
+
+.quienes-info {
+  text-align: center;
+}
+
+.div-horario {
+  display: grid;
+}
+
+.card-title {
+  margin-top: 5rem;
+}
+
+.text-horario {
+  margin-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.content-sabias-que {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.redes-sociales {
+  margin-left: 2rem;
+}
+
+.info-atencion {
+  margin: 1rem;
+  text-align: -webkit-left;
+}
+
+.card-body {
+  background: lightgrey;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width:700px) and (min-width:500px) {
+    .texto{
+       font-size: 12px;
+    }
+}
