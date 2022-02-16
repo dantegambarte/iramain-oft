@@ -10,7 +10,14 @@ h5 {
   font-family: "Fjalla One", sans-serif;
 }
 
+.img-logo{
+  border-radius: 1rem;
+  width: auto;
+  height: 3rem;
+}
+
 .title {
+  padding-top: 1rem;
   font-family: "Lora";
   margin-top: 5rem;
   margin-left: 2rem;
