@@ -176,13 +176,13 @@ h5 {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-#mainButton .btn-text {
+#mainButton .btn-dark {
   z-index: 2;
   display: block;
   padding: 10px 20px;
   position: relative;
 }
-#mainButton .btn-text:hover {
+#mainButton .btn-dark:hover {
   cursor: pointer;
 }
 #mainButton:after {

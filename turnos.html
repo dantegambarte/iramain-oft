@@ -43,7 +43,7 @@
                         <a class="nav-link" href="./sabias-que.html">¿Sabías que?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                        <a class="nav-link" href="./estudios.html">Estudios</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="./turnos.html">Turnos</a>
@@ -58,32 +58,34 @@
 
     <section style="height: 700px;">
         <div id="mainButton">
-            <div class="btn-text" onclick="openForm()">Solicitar turno</div>
-            <div class="modal" style="margin-top: 3rem;">
-                <div class="close-button" onclick="closeForm()">x</div>
-                <div class="form-title">Turno</div>
-                <div class="input-group">
-                    <input type="text" id="nombre" class="active" />
-                    <label for="nombre">Nombre</label>
+            <form action="">
+                <div class="btn-dark" onclick="openForm()"><div class="btn btn-info btn-block">SOLICITAR TURNO</div></div>
+                <div class="modal" style="margin-top: 3rem;">
+                    <div class="close-button" onclick="closeForm()">x</div>
+                    <div class="form-title">Turno</div>
+                    <div class="input-group">
+                        <input type="text" id="nombre" class="active" />
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="apellido" class="active" />
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="email" class="active" />
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="telefono" class="active" />
+                        <label for="telefono">Telefono</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="fecha" class="active" />
+                        <label for="fecha">Fecha</label>
+                    </div>
+                    <div class="form-button" onclick="closeForm()">Confirmar</div>
                 </div>
-                <div class="input-group">
-                    <input type="text" id="apellido" class="active" />
-                    <label for="apellido">Apellido</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="email" class="active" />
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="telefono" class="active" />
-                    <label for="telefono">Telefono</label>
-                </div>
-                <div class="input-group">
-                    <input type="date" id="fecha" class="active"/>
-                    <label for="fecha">Fecha</label>
-                </div>
-                <div class="form-button" onclick="closeForm()">Confirmar</div>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -91,16 +93,18 @@
         <div class="container">
             <div>
                 <h4 class="card-title-footer">HORARIO DE ATENCIÓN</h2>
-                <div class="text-horario">
-                    <p>Lunes a Jueves de 16:00 a 19:00 hs</p>
-                    <p>Por orden de llegada o por asignacion de turnos mediante la web</p>
-                </div>
-                <hr>
-                <div class="text-contacto">
-                    <i class="fa-solid fa-phone" style="color: white;"></i> <span>0381-4219327</span> <br>
-                    <i class="fa-solid fa-envelope" style="color: white;"></i> <span> jiramain@hotmail.com</span> <br>
-                    <i class="fa-solid fa-location-dot" style="color: white;"></i> <span>Santiago 198, S. M. de Tucumán</span> <br>
-                </div>
+                    <div class="text-horario">
+                        <p>Lunes a Jueves de 16:00 a 19:00 hs</p>
+                        <p>Por orden de llegada o por asignacion de turnos mediante la web</p>
+                    </div>
+                    <hr>
+                    <div class="text-contacto">
+                        <i class="fa-solid fa-phone" style="color: white;"></i> <span>0381-4219327</span> <br>
+                        <i class="fa-solid fa-envelope" style="color: white;"></i> <span> jiramain@hotmail.com</span>
+                        <br>
+                        <i class="fa-solid fa-location-dot" style="color: white;"></i> <span>Santiago 198, S. M. de
+                            Tucumán</span> <br>
+                    </div>
             </div>
         </div>
         <div class="container footer" style="height: 2rem"></div>
@@ -114,4 +118,5 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
 <script src="./app.js"></script>
+
 </html>
