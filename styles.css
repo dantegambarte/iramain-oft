@@ -98,8 +98,14 @@ h5 {
 .map-responsive {
   overflow: hidden;
   padding-bottom: 400px;
+  margin-left: 8rem;
+  margin-right: 8rem;
   position: relative;
   height: 0;
+}
+
+.text-after-map{
+  margin-left: 8rem;
 }
 
 .map-responsive iframe {
@@ -128,6 +134,24 @@ h5 {
   text-align: justify;
 }
 
+#img-estudios {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+
+#img-estudios > img {
+  width: 200px;
+  border-radius: 1rem;
+}
+
+#img-estudios > figcaption {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
 @media (max-width: 412px) {
   #img-dr-iramain {
     display: flex;
@@ -144,6 +168,36 @@ h5 {
   #img-dr-iramain > figcaption {
     margin: 1rem;
     text-align: center;
+  }
+
+  #img-estudios {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #img-estudios > img {
+    width: 120px;
+    border-radius: 1rem;
+  }
+
+  #img-estudios > figcaption {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    height: 0;
+  }
+
+  .text-after-map{
+    margin-left: 0;
   }
 }
 
@@ -358,4 +412,9 @@ h5 {
   text-align: center;
   text-transform: none;
   letter-spacing: initial;
+}
+
+.carousel-inner > .carousel-item > .card{
+  display: flex;
+  flex-direction: row;
 }
