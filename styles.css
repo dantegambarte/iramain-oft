@@ -23,11 +23,27 @@ h5 {
   margin-left: 2rem;
 }
 
+#title-doc {
+  background-color: #d3d3d3;
+  padding-bottom: 1px;
+  margin-left: 0;
+}
+
+#tarjeta-principal {
+  box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+
 .card {
   border: 0 !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.6);
   margin-bottom: 2rem;
+}
+
+.card-group {
+  margin: 1rem;
+  gap: 1rem;
 }
 
 .card-title {
@@ -39,13 +55,13 @@ h5 {
   min-height: 10rem;
 }
 
-.card-title-footer{
+.card-title-footer {
   padding-top: 2rem;
   text-align: center;
 }
 
-.text-contacto{
-  font-family: 'Lora', serif;
+.text-contacto {
+  font-family: "Lora", serif;
 }
 
 .container-form {
@@ -68,12 +84,9 @@ h5 {
   margin-top: 5rem;
 }
 
-.text-horario, .card-title-footer{
-  font-family: 'Lora', serif;
-}
-
-.text-horario {
-  margin-left: 3rem;
+.text-horario,
+.card-title-footer {
+  font-family: "Lora", serif;
 }
 
 .content-sabias-que {
@@ -104,7 +117,7 @@ h5 {
   height: 0;
 }
 
-.text-after-map{
+.text-after-map {
   margin-left: 8rem;
 }
 
@@ -134,25 +147,49 @@ h5 {
   text-align: justify;
 }
 
-#img-estudios {
-  display: flex;
-  flex-direction: row;
-  text-align: justify;
+#img-dr-iramain > img {
+  margin: 1rem;
+  border: 1px solid #ffffff;
 }
 
-#img-estudios > img {
-  width: 200px;
-  border-radius: 1rem;
+#img-estudios-1,
+#img-estudios-2 {
+  background-color: #343a40 !important;
+  padding: 2.5rem;
 }
 
-#img-estudios > figcaption {
+#img-estudios-1 {
   margin-top: 4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  text-align: justify;
 }
 
-@media (max-width: 412px) {
+#carouselExampleFade {
+  margin-top: 3rem;
+}
+
+#carousel-img {
+  padding: 3rem;
+}
+
+.img-contacto {
+  height: 35rem;
+}
+
+@media (max-width: 280px) {
+  .img-logo {
+    width: 140px;
+    height: auto;
+  }
+
+  .img-contacto {
+    height: 28rem;
+  }
+
+  #img-estudios-1 {
+    margin-top: 5.5rem !important;
+  }
+}
+
+@media (max-width: 1023px) {
   #img-dr-iramain {
     display: flex;
     flex-direction: column;
@@ -170,21 +207,14 @@ h5 {
     text-align: center;
   }
 
-  #img-estudios {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    align-items: center;
+  #img-estudios-1,
+  #img-estudios-2 {
+    padding: 0;
+    box-shadow: none !important;
   }
 
-  #img-estudios > img {
-    width: 120px;
-    border-radius: 1rem;
-  }
-
-  #img-estudios > figcaption {
-    margin: 1rem;
-    text-align: center;
+  #img-estudios-1 {
+    margin-top: 6.5rem;
   }
 
   .map-responsive {
@@ -196,8 +226,44 @@ h5 {
     height: 0;
   }
 
-  .text-after-map{
+  .text-after-map {
     margin-left: 0;
+  }
+
+  #carouselExampleFade {
+    margin-top: 5rem;
+    margin-bottom: 5px;
+  }
+
+  #carousel-img {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .estudios {
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tel {
+    display: none !important;
+  }
+  .pc {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .tel {
+    display: block !important;
+  }
+  .pc {
+    display: none !important;
+  }
+
+  #carousel-img {
+    padding: 0.5rem;
   }
 }
 
@@ -414,7 +480,7 @@ h5 {
   letter-spacing: initial;
 }
 
-.carousel-inner > .carousel-item > .card{
+.carousel-inner > .carousel-item > .card {
   display: flex;
   flex-direction: row;
 }
