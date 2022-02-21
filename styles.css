@@ -35,6 +35,15 @@ h5 {
   -moz-box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
+.img-carusel-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+.section-carusel{
+  display: flex;
+  justify-content: space-around;
+}
 
 .card {
   border: 0 !important;
